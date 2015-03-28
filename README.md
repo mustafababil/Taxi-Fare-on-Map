@@ -35,3 +35,7 @@ In more detailed view;
 
 ## Demo
 http://mustafababil.com/projects/taxifare/
+
+
+## Screenshot
+<img src="http://i.imgur.com/W2GHXXd.png" alt="Taxi-fare-finder" />
