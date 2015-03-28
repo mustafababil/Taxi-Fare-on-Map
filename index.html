@@ -1,0 +1,77 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<meta name="author" content="Mustafa Babil">
+
+<title>Find Taxi Rates Roskilde and Copenhagen | Mustafa Babil</title> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+  <style type="text/css">
+    .page-map, .page-map .ui-content, #map { width: 100%; height: 80%; padding: 0; }
+    .ui-header h1.ui-title {margin-left: 4px; margin-right: 55px}
+    #info {text-align: center}
+  </style>
+  <!-- JQeuery and Google Maps -->
+  <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+  <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="ructaxi.js"></script>
+  
+</head> 
+<body onload="starter()"> 
+<div id="frontpage" data-role="page" class="page-map">
+  <div data-role="header" data-theme="e">
+    <h1 class="titel">Click the map to select departure and arrival points</h1>
+
+    <div class="addresses">
+      <span id="departAddress">From: -</span><br />
+      <span id="arriveAddress">To: -</span>
+    </div>
+
+    <br />
+    
+    <div class="distanceAndPrice">
+      <span id="distance">Distance: 0 km</span><br />
+      <span id="price">Price: 0 kr</span>
+    </div>
+
+    <button id="alternative" disabled="disabled">Alternative Route</button>
+
+
+    <a href="#about" class="ui-btn-right"  data-transition="pop">About</a>
+  </div>
+  <div data-role="content" id="map"></div>
+</div>
+
+<div id="about" data-role="page">
+  <div data-role="header" data-theme="e">
+    <h1>About</h1>
+    <a href="#frontpage" data-rel="back" data-icon="delete" data-iconpos="notext" data-transition="slidedown">Luk</a>
+  </div>
+  <div data-role="content" data-theme="e">
+    <h3>Taxi Fare Finder for Roskilde and Copanhagen</h3>
+    <h4>Developed by Mustafa Babil</h4>
+    <h4>Using Instructions</h4>
+    <ol>
+      <li>Click on your departure place that you take the taxi.</li>
+      <li>Click on your arrival point.</li>
+    </ol>
+    <p>Then you can see the address of travel points, the distance between them and the possible price of the travel.</p>
+    <p>You can select alternative routes by clicking the "Alternative Route" button</p>
+
+    <h4>System Information</h4>
+    <p>This web site actively use the services of "Google Maps" and "Geoservice of OIOREST"</p>
+
+  </div>
+</div>
+</body> 
+</html> 
+
+
+
+
